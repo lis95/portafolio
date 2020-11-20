@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portafolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#textimonials" onclick="toggleMenu();">Textimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br><span>Venezolano</span></h2>
+            <h3>I'm a Front End Web Developer.</h3>
+            <a href='#about' class='btn'> About Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx W50">
+                <h3>I'm a Front End Web Developer.</h3>
+                <p>Ingeniero en informática con 2 años de experiencia en el desarrollo web. 
+                    Me gusta la tecnologia, probar nuevas herramientas y estar a la vanguardia de los diseños que demanda el mercado. 
+                    Soy autodidacta, responsable y creativa.
+                </p>
+            </div>
+            <div class="W50">
+                <img src="frontend.jpg" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Nuestros Servicios</h2>
+            <p>Desarrollo web responsivo</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="icon1.png">
+                <h2>Web Desingn</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon2.png">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon3.png">
+                <h2>Android App</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon4.png">
+                <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon5.png">
+                <h2>Content Writing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="icon6.png">
+                <h2>Video Editing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur 
+                    rerum officia quod nulla, harum voluptatem, nisi, culpa dicta quos dolores! Eius, ad sit! Dolores, impedit voluptate?
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Herramientas tecnológicas</h2>
+            <p>habilidades para el diseño web</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="html.jpeg" alt="">
+            </div>
+            <div class="workBx">
+                <img src="css.jpg" alt="">
+            </div>
+            <div class="workBx">
+                <img src="javascrip.jpeg" alt="">
+            </div>
+            <div class="workBx">
+                <img src="react.png" alt="">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn"> View More</a>
+        </div>
+    </section>
+    <section class="testimonial" id="textimonials">
+        <div class="heading">
+            <h2>Testimonios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error repellendus deleniti reiciendis assumenda.
+                     Vero ducimus accusantium iusto odit cupiditate natus ad corporis alias reiciendis provident? Dicta nemo amet dolor molestias?
+                </p>
+                <h3>Someone Famaous<br><span>Creative Desingn</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error repellendus deleniti reiciendis assumenda.
+                     Vero ducimus accusantium iusto odit cupiditate natus ad corporis alias reiciendis provident? Dicta nemo amet dolor molestias?
+                </p>
+                <h3>Someone Famaous<br><span>Creative Desingn</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+ 
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Country</h3>
+                            <p>Aragua, Venezuela</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+54 0424-134-0293</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>romilis.2195@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Massage Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Creado por Liset Trocel</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', () =>{
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        function toggleMenu() {
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
