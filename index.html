@@ -16,7 +16,7 @@
             <li><a href="#home" onclick="toggleMenu();">Home</a></li>
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
             <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Skills</a></li>
             <li><a href="#textimonials" onclick="toggleMenu();">Textimonials</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
@@ -97,26 +97,32 @@
     </section>
     <section class="work" id="work">
         <div class="heading">
-            <h2>Herramientas tecnológicas</h2>
+            <h2>Skills</h2>
             <p>habilidades para el diseño web</p>
         </div>
         <div class="content">
-            <div class="workBx">
-                <img src="html.jpeg" alt="">
-            </div>
-            <div class="workBx">
-                <img src="css.jpg" alt="">
-            </div>
-            <div class="workBx">
-                <img src="javascrip.jpeg" alt="">
-            </div>
-            <div class="workBx">
-                <img src="react.png" alt="">
+            <div>
+                <label for="file">HTML:</label>
+                <progress id="file" max="100" value="90"></progress>90%
+            </div><br>
+            <div>
+                <label for="file">CSS:</label>
+                <progress id="file" max="100" value="70"></progress>70%
+            </div><br>
+            <div>
+                <label for="file">JS:</label>
+                <progress id="file" max="100" value="50"></progress>50%
+            </div><br>
+            <div>
+                <label for="file">REACT.JS:</label>
+                <progress id="file" max="100" value="20"></progress>20%
+            </div><br>
+            <div>
+                <label for="file">BOOTSTRAP:</label>
+                <progress id="file" max="100" value="70"></progress>70%
             </div>
         </div>
-        <div class="heading">
-            <a href="#" class="btn"> View More</a>
-        </div>
+
     </section>
     <section class="testimonial" id="textimonials">
         <div class="heading">
@@ -190,17 +196,8 @@
     <div class="copyright">
         <p>Creado por Liset Trocel</p>
     </div>
-    <script type="text/javascript">
-        window.addEventListener('scroll', () =>{
-            let header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-        })
-        function toggleMenu() {
-            let menuToggle = document.querySelector('.toggle');
-            let menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active')
-            menu.classList.toggle('active')
-        }
+    <script type="text/javascript" src="funcion.js">
+       
     </script>
 </body>
 </html>

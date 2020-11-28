@@ -70,7 +70,7 @@ header {
 header.sticky {
     background: #a7048bb6;
     padding: 20px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0,0.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25)
 }
 header .logo {
     color: rgba(70, 0, 43, 0.733);
@@ -82,11 +82,11 @@ header .logo {
 }
 header.sticky .logo {
     color: rgb(240, 187, 222);
+
 }
 header ul {
     position: relative;
     display: flex;
-    /* color: #fff; */
 }
 header ul li {
     position: relative;
@@ -136,14 +136,14 @@ img {
   margin-top: auto;
 }
 
-
-
 .services {
     background: #111;
 }
 .heading.white {
     color: #fff;
 }
+
+/*seccion de servicios*/
 .services .content{
     display: flex;
     justify-content: center;
@@ -173,20 +173,31 @@ img {
 }
 
 
-/* secction work */
-
+/* secction skills */
 .work .content {
-    display: flex;
+    display: block;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.work .content .workBx {
-    width: 50%;
-    padding: 20px;
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 400px;
+    height: 20px;
+    overflow:hidden;
+    border-radius : 20px ;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25)
 }
-.work .content .workBx img {
-    max-width: 100%;
-}
+progress[value]::-webkit-progress-value {
+    background-color:  rgba(70, 0, 43, 0.733);
+    border-radius: 20px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+  }
 
 /* secction testimonial */
 
