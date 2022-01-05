@@ -6,38 +6,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio Liset Trocel</title>
+    <title>Portafolio Joseph Blanco</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Portafolio</a>
+        <a href="#" class="logo">.portafolio()</a>
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
-            <li><a href="#textimonials" onclick="toggleMenu();">Textimonials</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <li><a href="#home" onclick="toggleMenu();">.home()</a></li>
+            <li><a href="#about" onclick="toggleMenu();">.about()</a></li>
+            <li><a href="#services" onclick="toggleMenu();">.services()</a></li>
+            <li><a href="#work" onclick="toggleMenu();">.skills()</a></li>
+            <li><a href="#textimonials" onclick="toggleMenu();">.textimonials()</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">.contact()</a></li>
         </ul>
     </header>
-    <section class="banner" id="home">
-        <div class="textBx">
-            <h2>Hello, I'm <br><span>Venezolano</span></h2>
-            <h3>I'm a Front End Web Developer.</h3>
-            <a href='#about' class='btn'> About Me</a>
-        </div>
-    </section>
+    <canvas id="home"></canvas>
+    <div class="textBx">
+        <h2>I am Joseph <br> a creative frontend developer</h2>
+        <h3>From Venezuela, based in Chile</h3>
+        <a href='#about' class='btn'> About Me</a>
+    </div>
     <section class="about" id="about">
         <div class="heading">
             <h2>About Me</h2>
         </div>
         <div class="content">
             <div class="contentBx W50">
-                <h3>I'm a Front End Web Developer.</h3>
-                <p>Ingeniero en informática con 2 años de experiencia en el desarrollo web. 
-                    Me gusta la tecnologia, probar nuevas herramientas y estar a la vanguardia de los diseños que demanda el mercado. 
-                    Soy autodidacta, responsable y creativa.
+                <h3>I'm a Web UI Developeront.</h3>
+                <p>I am FrontEnd Developer with good pactice in Git, Javascript, webpack, Typescript, Jsx and Reactjs also desing frameworks like bootstrap, materialize, material UI.
+                    I work with Task Runers like Assana, trello and dapulse when the work is remotly i like the team work, 
+                    i'm responsable, i'm committed with the work and i ready to learn new things in the work
+                     if i need to become a great frontend developer with a high knowledge in the actual trends
                 </p>
             </div>
             <div class="W50">
@@ -97,8 +97,7 @@
     </section>
     <section class="work" id="work">
         <div class="heading">
-            <h2>Herramientas tecnológicas</h2>
-            <p>habilidades para el diseño web</p>
+            <h2>Skills</h2>
         </div>
         <div class="content">
             <div class="workBx">
@@ -120,7 +119,7 @@
     </section>
     <section class="testimonial" id="textimonials">
         <div class="heading">
-            <h2>Testimonios</h2>
+            <h2>Testimonials</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, id! Tempore facilis consequuntur</p>
         </div>
         <div class="content">
@@ -140,7 +139,7 @@
     </section>
     <section class="contact" id="contact">
         <div class="heading white">
-            <h2>Contact Us</h2>
+            <h2>Contact</h2>
  
         </div>
         <div class="content">
@@ -153,7 +152,7 @@
                         </div>
                         <div class="text">
                             <h3>Country</h3>
-                            <p>Aragua, Venezuela</p>
+                            <p>Santiago, Chile</p>
                         </div>
                     </div>
                     <div class="box">
@@ -162,7 +161,7 @@
                         </div>
                         <div class="text">
                             <h3>Phone</h3>
-                            <p>+54 0424-134-0293</p>
+                            <p>+56 974903530</p>
                         </div>
                     </div>
                     <div class="box">
@@ -171,7 +170,7 @@
                         </div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>romilis.2195@gmail.com</p>
+                            <p>josephifrit@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +187,7 @@
         </div>
     </section>
     <div class="copyright">
-        <p>Creado por Liset Trocel</p>
+        <p>Creado por Joseph Blanco</p>
     </div>
     <script type="text/javascript">
         window.addEventListener('scroll', () =>{
@@ -201,6 +200,83 @@
             menuToggle.classList.toggle('active')
             menu.classList.toggle('active')
         }
+
+        var n_stars = 150
+        var colors = [ '#176ab6', '#fb9b39']
+        for ( let i = 0; i < 98; i++) {
+        colors.push( '#fff')
+        }
+
+        var canvas =  document.querySelector('canvas');
+
+        canvas.width = innerWidth
+        canvas.height = innerHeight
+
+        addEventListener( 'resize', () => {
+        canvas.width = innerWidth
+        canvas.height = innerHeight
+        stars = []
+        init()
+        })
+
+        canvas.style.background = '#000'
+        var c = canvas.getContext('2d')
+
+        const randomInt = ( max, min) => Math.floor( Math.random() * (max - min) + min)
+
+        var bg = c.createRadialGradient( canvas.width/ 2, canvas.height * 3, canvas.height ,canvas.width/ 2,canvas.height , canvas.height * 4);
+        bg.addColorStop(0,"#32465E");
+        bg.addColorStop(.4,"#000814");
+        bg.addColorStop(.8,"#000814");
+        bg.addColorStop(1,"#000");
+
+        class Star {
+        constructor( x, y, radius, color) {
+            this.x = x || randomInt( 0, canvas.width)
+            this.y = y || randomInt( 0, canvas.height)
+            this.radius = radius || Math.random() * 1.1
+            this.color = color || colors[randomInt(0, colors.length)]
+            this.dy = -Math.random() * .3
+        }
+        draw () {
+            c.beginPath()
+            c.arc( this.x, this.y, this.radius, 0, Math.PI *2 )
+            c.shadowBlur = randomInt( 3, 15)
+            c.shadowColor = this.color
+            c.strokeStyle = this.color
+            c.fillStyle = 'rgba( 255, 255, 255, .5)'
+            c.fill()
+            c.stroke()
+            c.closePath()
+        }
+        update( arrayStars = [] ) {
+            if ( this.y - this.radius < 0 ) this.createNewStar( arrayStars )
+            
+            this.y += this.dy
+            this.draw()
+        }
+        createNewStar( arrayStars = [] ) {
+            let i = arrayStars.indexOf( this )
+            arrayStars.splice( i, 1)
+            arrayStars.push( new Star( false, canvas.height + 5))
+        }
+        }
+        var stars = []
+        function init() {
+        for( let i = 0; i < n_stars; i++ ) {
+            stars.push( new Star( ) )
+        }
+        }
+        init()
+
+        function animate() {
+        requestAnimationFrame( animate)
+        c.clearRect( 0, 0, canvas.width, canvas.height)
+        c.fillStyle = bg
+        c.fillRect(0, 0, canvas.width, canvas.height)
+        stars.forEach( s => s.update( stars ))
+        }
+        animate()
     </script>
 </body>
 </html>

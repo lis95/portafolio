@@ -7,37 +7,38 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+
+canvas {
+    width: -webkit-fill-available;
+    position: relative;
+    background: rgb(0, 0, 0);
+}
 section {
     padding: 100px;
 }
-.banner {
-    position: relative;
-    min-height: 100vh;
-    background: url(fondo.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.textBx {
+    position: absolute;
+    bottom: 25%;
+    padding-left: 100px; 
 }
-.banner h2 {
+.textBx h2 {
     font-size: 3em;
     color: #fff;
     font-weight:500;
     line-height: 1.5em;
 }
-.banner h2 span {
+.textBx h2 span {
     font-size: 1.5em;
     font-weight: 700;
 }
-.banner h3 {
+.textBx h3 {
     font-size: 1.5em;
     color: #fff;
     font-weight:500;
 }
 .btn {
     position: relative;
-    background: rgba(70, 0, 43, 0.733);
+    background: #682ae9;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
@@ -47,12 +48,13 @@ section {
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
-    border: 2px solid   rgba(70, 0, 43, 0.733);
+    border: 2px solid #682ae9;
     border-radius: 10px;
 }
 .btn:hover {
     background: #fff;
-    color:  rgba(70, 0, 43, 0.733);
+    color:  #682ae9;
+    border: 1px solid #fff;
 }
 
 header {
@@ -68,20 +70,19 @@ header {
     transition: 0.5s;
 }
 header.sticky {
-    background: #a7048bb6;
+    background:#682ae9;
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0,0.1);
 }
 header .logo {
-    color: rgba(70, 0, 43, 0.733);
+    color: #682ae9;
     font-size:24px;
-    text-transform:  uppercase;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
 }
 header.sticky .logo {
-    color: rgb(240, 187, 222);
+    color: #682ae9;
 }
 header ul {
     position: relative;
@@ -100,7 +101,7 @@ header ul li a {
     text-decoration: none;
 }
 header ul li a:hover{
-    color: rgb(240, 187, 222);
+    color: #682ae9;
 }
 header.sticky ul a {
     color: #fff;
@@ -412,12 +413,18 @@ img {
         header,
         header .sticky {
             padding: 20px 20px;
+        }        
+        .textBx {
+            padding-left: 50px;
         }
         .banner {
             padding: 150px 20px 100px;
         }
         section {
             padding: 100px 20px;
+        }
+        .textBx h2 {
+            font-size: 2em;
         }
     }
 }
